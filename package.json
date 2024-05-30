@@ -1,0 +1,25 @@
+{
+  "name": "land-and-ritual-backend",
+  "version": "1.0.0",
+  "description": "Backend Repository for Land & Ritual Frontend",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./bin/www.js",
+    "dev": "nodemon ./bin/www"
+  },
+  "keywords": [],
+  "author": "",
+  "type": "module",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.2"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.4.0",
+    "morgan": "^1.10.0"
+  }
+}

@@ -6,7 +6,7 @@ import cors from "cors";
 import "./config/database.js";
 
 // import routers
-import { router as indexRouter } from "./routes/index.js";
+import { router as productsRouter } from "./routes/products.js";
 
 // create the express app
 const app = express();
@@ -17,7 +17,7 @@ app.use(logger("dev"));
 app.use(express.json());
 
 // mount imported routes
-app.use("/", indexRouter);
+app.use("/api/products", productsRouter);
 
 // handle 404 errors
 app.use(function (req, res, next) {

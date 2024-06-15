@@ -20,7 +20,18 @@ async function index(req, res) {
   }
 }
 
+async function show(req,res){
+  try {
+    const product = await Product.findById(req.params.productId)
+    res.status(200).json(product)
+  } catch (error) {
+    console.log(error);
+    res.status(500).json(error);
+  }
+}
+
 export { 
   create,
-  index
+  index,
+  show
 };
